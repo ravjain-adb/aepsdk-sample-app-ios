@@ -31,4 +31,6 @@ target 'AEPSampleApp' do
   # step-analytics-start
   pod 'AEPAnalyticsEdge', :git => 'https://github.com/adobe/aepsdk-analyticsedge-ios', :branch => 'main'
   # step-analytics-end
+  
+  pod 'AEPMessaging', :git => 'git@github.com:adobe/aepsdk-messaging-ios.git', :branch => 'dev'
 end

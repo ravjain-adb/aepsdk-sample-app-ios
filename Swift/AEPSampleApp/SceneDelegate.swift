@@ -12,6 +12,7 @@ import UIKit
 import AEPCore
 // step-init-end
 
+import SwiftUI
 
 // step-assurance-start
 import AEPAssurance
@@ -29,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = MainTabBarController()
+        window?.rootViewController = MainScreenController()
         window?.makeKeyAndVisible()
     }
 
