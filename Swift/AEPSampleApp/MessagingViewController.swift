@@ -143,7 +143,7 @@ struct MessagingView: View {
         "   }\n" +
         "}"
         
-        let postBodyString = String.init(format: payload, ecid, ecid, personalisedData)
+        let postBodyString = String.init(format: payload, AppDelegate.CUSTOM_PROFILE_DATASET, ecid, personalisedData)
         return postBodyString
     }
 }
