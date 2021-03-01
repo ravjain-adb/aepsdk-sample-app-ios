@@ -133,6 +133,11 @@ struct MessagingView: View {
         "                    {\n" +
         "                         \"id\" : \"%@\"\n" +
         "                    }\n" +
+        "                ],\n" +
+        "                \"Email\": [\n" +
+        "                    {\n" +
+        "                         \"id\" : \"%@\"\n" +
+        "                    }\n" +
         "                ]\n" +
         "            },\n" +
         "      \"testProfile\": true,\n" +
@@ -143,7 +148,7 @@ struct MessagingView: View {
         "   }\n" +
         "}"
         
-        let postBodyString = String.init(format: payload, AppDelegate.CUSTOM_PROFILE_DATASET, ecid, personalisedData)
+        let postBodyString = String.init(format: payload, AppDelegate.CUSTOM_PROFILE_DATASET, ecid, personalisedData, personalisedData)
         return postBodyString
     }
 }
